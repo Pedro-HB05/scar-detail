@@ -9,7 +9,17 @@
     >
     <meta name="theme-color" content="#0b0b0b">
 
+    <meta property="og:title" content="SCAR Detail | Estética Automotiva">
+    <meta
+        property="og:description"
+        content="Lavagem e estética automotiva com atendimento em domicílio e agendamento online."
+    >
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
     <title>SCAR Detail | Estética Automotiva</title>
+
+    <link rel="icon" href="assets/img/logo.jpg" type="image/jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +48,14 @@
                 <a href="#servicos">Serviços</a>
                 <a href="#galeria">Galeria</a>
                 <a href="#contato">Contato</a>
+                <a
+                    class="menu-agendar"
+                    href="https://scardetail-ui.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Agendar agora
+                </a>
             </nav>
 
             <button
@@ -67,8 +85,14 @@
                     </p>
 
                     <div class="hero-acoes">
-                        <a class="botao botao-primario" href="#contato">
-                            Solicitar orçamento
+                        <a
+                            class="botao botao-primario"
+                            href="https://scardetail-ui.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                            Agendar pelo sistema
                         </a>
                         <a
                             class="botao botao-secundario js-whatsapp-link"
@@ -87,6 +111,27 @@
                         src="assets/img/ScarDetail.png"
                         alt="Veículo coberto de espuma durante lavagem automotiva"
                     >
+                </div>
+            </div>
+        </section>
+
+        <section class="diferenciais" aria-label="Diferenciais da SCAR Detail">
+            <div class="container diferenciais-grid">
+                <div class="diferencial-item">
+                    <i class="fa-solid fa-house" aria-hidden="true"></i>
+                    <span>Atendimento em domicílio</span>
+                </div>
+                <div class="diferencial-item">
+                    <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    <span>Agendamento online</span>
+                </div>
+                <div class="diferencial-item">
+                    <i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i>
+                    <span>Produtos profissionais</span>
+                </div>
+                <div class="diferencial-item">
+                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                    <span>Cuidado em cada detalhe</span>
                 </div>
             </div>
         </section>
@@ -124,28 +169,76 @@
             <div class="container">
                 <div class="secao-cabecalho">
                     <span class="secao-etiqueta">O que fazemos</span>
-                    <h2>Nossos serviços</h2>
-                    <p>Escolha o cuidado ideal para o seu veículo.</p>
+                    <h2>Serviços e valores</h2>
+                    <p>Confira o tempo estimado e o valor para cada categoria de veículo.</p>
                 </div>
 
-                <div class="servicos-grid">
-                    <article class="servico-card revelar">
-                        <i class="fa-solid fa-car" aria-hidden="true"></i>
-                        <h3>Lavagem rápida</h3>
-                        <p>Limpeza prática para manter seu veículo sempre bem cuidado.</p>
-                    </article>
+                <div class="tabela-precos-wrapper revelar">
+                    <table class="tabela-precos">
+                        <caption class="sr-only">Preços dos serviços por categoria de veículo</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Serviço</th>
+                                <th scope="col">Duração</th>
+                                <th scope="col">Hatch</th>
+                                <th scope="col">Sedan</th>
+                                <th scope="col">Wagon</th>
+                                <th scope="col">SUV</th>
+                                <th scope="col">Camionete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Completa com Cera</th>
+                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 120 min</td>
+                                <td data-label="Hatch">R$ 65</td>
+                                <td data-label="Sedan">R$ 85</td>
+                                <td data-label="Wagon">R$ 85</td>
+                                <td data-label="SUV">R$ 95</td>
+                                <td data-label="Camionete">R$ 105</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Completa sem Cera</th>
+                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 90 min</td>
+                                <td data-label="Hatch">R$ 55</td>
+                                <td data-label="Sedan">R$ 70</td>
+                                <td data-label="Wagon">R$ 70</td>
+                                <td data-label="SUV">R$ 80</td>
+                                <td data-label="Camionete">R$ 90</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Somente Lavagem Externa</th>
+                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</td>
+                                <td data-label="Hatch">R$ 30</td>
+                                <td data-label="Sedan">R$ 40</td>
+                                <td data-label="Wagon">R$ 40</td>
+                                <td data-label="SUV">R$ 45</td>
+                                <td data-label="Camionete">R$ 50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Somente Limpeza Interna</th>
+                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</td>
+                                <td data-label="Hatch">R$ 30</td>
+                                <td data-label="Sedan">R$ 40</td>
+                                <td data-label="Wagon">R$ 40</td>
+                                <td data-label="SUV">R$ 45</td>
+                                <td data-label="Camionete">R$ 50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                    <article class="servico-card revelar">
-                        <i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i>
-                        <h3>Lavagem detalhada</h3>
-                        <p>Limpeza completa, com atenção aos mínimos detalhes.</p>
-                    </article>
-
-                    <article class="servico-card revelar">
-                        <i class="fa-solid fa-soap" aria-hidden="true"></i>
-                        <h3>Limpeza interna</h3>
-                        <p>Higienização de bancos, painéis e acabamentos internos.</p>
-                    </article>
+                <div class="servicos-acao revelar">
+                    <p>Já sabe qual cuidado seu veículo precisa?</p>
+                    <a
+                        class="botao botao-primario"
+                        href="https://scardetail-ui.onrender.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                        Agendar serviço
+                    </a>
                 </div>
             </div>
         </section>
@@ -171,8 +264,34 @@
             <div class="container contato-conteudo">
                 <div class="secao-cabecalho">
                     <span class="secao-etiqueta">Fale conosco</span>
-                    <h2>Solicite um orçamento</h2>
-                    <p>Preencha os dados e envie sua solicitação pelo WhatsApp.</p>
+                    <h2>Escolha como agendar</h2>
+                    <p>Agende online pelo sistema ou fale diretamente conosco pelo WhatsApp.</p>
+                </div>
+
+                <div class="agendamento-online revelar">
+                    <div class="agendamento-online-texto">
+                        <span class="agendamento-online-icone" aria-hidden="true">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </span>
+                        <div>
+                            <h3>Agendamento online</h3>
+                            <p>Acesse o sistema para escolher seu serviço e organizar seu atendimento.</p>
+                        </div>
+                    </div>
+
+                    <a
+                        class="botao botao-primario"
+                        href="https://scardetail-ui.onrender.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Acessar sistema
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="agendamento-divisor" aria-hidden="true">
+                    <span>ou solicite pelo WhatsApp</span>
                 </div>
 
                 <form class="formulario revelar" id="formularioOrcamento">
