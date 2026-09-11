@@ -476,6 +476,72 @@ function iniciarSite() {
     }
 
     // =========================
+    // GALERIA LIGHTBOX
+    // =========================
+
+    function configurarGaleriaLightbox() {
+        const itensGaleria = document.querySelectorAll(".galeria-item");
+        const modal = document.querySelector("#lightboxModal");
+        const modalImg = document.querySelector("#lightboxImagem");
+        const modalLegenda = document.querySelector("#lightboxLegenda");
+        const botaoFechar = document.querySelector("#lightboxFechar");
+
+        if (!modal || !modalImg || !modalLegenda || itensGaleria.length === 0) {
+            return;
+        }
+
+        function abrirLightbox(src, caption) {
+            modalImg.src = src;
+            modalImg.alt = caption || "Imagem da galeria";
+            modalLegenda.textContent = caption || "";
+            modal.classList.add("ativo");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("lightbox-aberto");
+        }
+
+        function fecharLightbox() {
+            modal.classList.remove("ativo");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("lightbox-aberto");
+            modalImg.src = "";
+        }
+
+        itensGaleria.forEach((item) => {
+            item.addEventListener("click", () => {
+                const src = item.dataset.imgSrc || item.querySelector("img")?.src;
+                const caption = item.dataset.caption || item.querySelector("img")?.alt;
+                if (src) {
+                    abrirLightbox(src, caption);
+                }
+            });
+
+            item.setAttribute("tabindex", "0");
+            item.setAttribute("role", "button");
+            item.setAttribute("aria-label", "Ampliar imagem da galeria");
+            item.addEventListener("keydown", (evento) => {
+                if (evento.key === "Enter" || evento.key === " ") {
+                    evento.preventDefault();
+                    item.click();
+                }
+            });
+        });
+
+        botaoFechar?.addEventListener("click", fecharLightbox);
+
+        modal.addEventListener("click", (evento) => {
+            if (evento.target === modal) {
+                fecharLightbox();
+            }
+        });
+
+        document.addEventListener("keydown", (evento) => {
+            if (evento.key === "Escape" && modal.classList.contains("ativo")) {
+                fecharLightbox();
+            }
+        });
+    }
+
+    // =========================
     // INICIALIZAÇÃO
     // =========================
 
@@ -488,6 +554,7 @@ function iniciarSite() {
     configurarFormulario();
     configurarAnoAtual();
     configurarSecaoAtiva();
+    configurarGaleriaLightbox();
 
     window.addEventListener(
         "scroll",

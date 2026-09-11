@@ -168,64 +168,274 @@
         <section class="secao servicos" id="servicos">
             <div class="container">
                 <div class="secao-cabecalho">
-                    <span class="secao-etiqueta">O que fazemos</span>
-                    <h2>Serviços e valores</h2>
-                    <p>Confira o tempo estimado e o valor para cada categoria de veículo.</p>
+                    <span class="secao-etiqueta">Cardápio de Serviços</span>
+                    <h2>Cardápio Completo de Serviços — Estética Automotiva</h2>
+                    <p>
+                        Escolha o nível de cuidado ideal para o seu veículo. Do cuidado rápido para a manutenção do dia a dia ao detalhamento técnico de alto padrão, cada serviço é realizado com produtos adequados, atenção aos detalhes e técnicas seguras para preservar a estética e a conservação do veículo.
+                    </p>
                 </div>
 
-                <div class="tabela-precos-wrapper revelar">
-                    <table class="tabela-precos">
-                        <caption class="sr-only">Preços dos serviços por categoria de veículo</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Serviço</th>
-                                <th scope="col">Duração</th>
-                                <th scope="col">Hatch</th>
-                                <th scope="col">Sedan</th>
-                                <th scope="col">Wagon</th>
-                                <th scope="col">SUV</th>
-                                <th scope="col">Camionete</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Completa com Cera</th>
-                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 120 min</td>
-                                <td data-label="Hatch">R$ 65</td>
-                                <td data-label="Sedan">R$ 85</td>
-                                <td data-label="Wagon">R$ 85</td>
-                                <td data-label="SUV">R$ 95</td>
-                                <td data-label="Camionete">R$ 105</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Completa sem Cera</th>
-                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 90 min</td>
-                                <td data-label="Hatch">R$ 55</td>
-                                <td data-label="Sedan">R$ 70</td>
-                                <td data-label="Wagon">R$ 70</td>
-                                <td data-label="SUV">R$ 80</td>
-                                <td data-label="Camionete">R$ 90</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Somente Lavagem Externa</th>
-                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</td>
-                                <td data-label="Hatch">R$ 30</td>
-                                <td data-label="Sedan">R$ 40</td>
-                                <td data-label="Wagon">R$ 40</td>
-                                <td data-label="SUV">R$ 45</td>
-                                <td data-label="Camionete">R$ 50</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Somente Limpeza Interna</th>
-                                <td data-label="Duração"><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 min</td>
-                                <td data-label="Hatch">R$ 30</td>
-                                <td data-label="Sedan">R$ 40</td>
-                                <td data-label="Wagon">R$ 40</td>
-                                <td data-label="SUV">R$ 45</td>
-                                <td data-label="Camionete">R$ 50</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- CARDS EXPLICATIVOS DOS SERVIÇOS -->
+                <div class="servicos-catalogo">
+                    <!-- 1. SERVIÇOS AVULSOS -->
+                    <article class="servico-bloco revelar">
+                        <div class="servico-bloco-cabecalho">
+                            <span class="servico-icone-emoji" aria-hidden="true">🛠️</span>
+                            <div>
+                                <h3>Serviços Avulsos</h3>
+                                <p>Opções pontuais para cuidar de áreas específicas do seu carro com agilidade e técnica.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico-subitens-grid">
+                            <div class="servico-subitem-card">
+                                <div class="servico-subitem-titulo">
+                                    <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                                    <h4>Limpeza Interna</h4>
+                                </div>
+                                <p class="servico-subitem-desc">
+                                    Ideal para manter o interior do veículo sempre limpo, agradável e livre do acúmulo de poeira e sujeira.
+                                </p>
+                                <ul class="servico-lista-etapas">
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Aspiração Completa:</strong> Remoção de poeira, resíduos e detritos de carpetes, tapetes, bancos e porta-malas.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Limpeza de Painel e Consoles:</strong> Limpeza e higienização de painel, volante, console central, portas e demais superfícies internas.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Vidros Internos:</strong> Limpeza dos vidros pelo lado interno, proporcionando maior transparência e visibilidade.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="servico-subitem-card">
+                                <div class="servico-subitem-titulo">
+                                    <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                                    <h4>Limpeza Externa</h4>
+                                </div>
+                                <p class="servico-subitem-desc">
+                                    Uma opção prática para recuperar o aspecto limpo e bem cuidado da carroceria, rodas e pneus.
+                                </p>
+                                <ul class="servico-lista-etapas">
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Pré-lavagem:</strong> Aplicação de produtos específicos para soltar terra, areia e sujeiras superficiais, reduzindo o risco de marcas e micro-riscos durante a lavagem.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Lavagem da Carroceria:</strong> Limpeza segura utilizando shampoo automotivo de pH neutro e luvas de microfibra.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Rodas e Pneus:</strong> Limpeza superficial das rodas e aplicação de acabamento nos pneus.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. LINHA DE LAVAGENS COMPLETAS -->
+                    <article class="servico-bloco revelar">
+                        <div class="servico-bloco-cabecalho">
+                            <span class="servico-icone-emoji" aria-hidden="true">🚗</span>
+                            <div>
+                                <h3>Linha de Lavagens Completas</h3>
+                                <p>A união perfeita de cuidado interno e externo para a manutenção periódica do veículo.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico-subitens-grid">
+                            <div class="servico-subitem-card">
+                                <div class="servico-subitem-titulo">
+                                    <i class="fa-solid fa-soap" aria-hidden="true"></i>
+                                    <h4>Lavagem Completa — Sem Cera</h4>
+                                </div>
+                                <p class="servico-subitem-desc">
+                                    A combinação perfeita entre limpeza interna e externa para a manutenção periódica do veículo.
+                                </p>
+                                <ul class="servico-lista-etapas">
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Exterior:</strong> Pré-lavagem, lavagem técnica da carroceria, limpeza superficial de rodas e pneus e secagem completa.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Interior:</strong> Aspiração completa do habitáculo e porta-malas, além da limpeza de painel, console central e superfícies internas.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Vidros:</strong> Limpeza dos vidros internos e externos para um acabamento limpo e cristalino.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="servico-subitem-card">
+                                <div class="servico-subitem-titulo">
+                                    <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                                    <h4>Lavagem Completa — Com Cera</h4>
+                                </div>
+                                <p class="servico-subitem-desc">
+                                    Todo o cuidado da Lavagem Completa Sem Cera, com um acabamento extra para realçar o brilho e proporcionar proteção à pintura.
+                                </p>
+                                <ul class="servico-lista-etapas">
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Limpeza Completa:</strong> Todas as etapas de limpeza interna e externa da modalidade Sem Cera.
+                                    </li>
+                                    <li>
+                                        <strong><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Brilho e Proteção:</strong> Aplicação manual de cera automotiva, proporcionando maior brilho, toque mais agradável e proteção adicional contra água, poeira, fuligem e exposição aos raios UV.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. LAVAGEM DETALHADA - DESTAQUE PREMIUM -->
+                    <article class="servico-bloco servico-bloco-destaque revelar">
+                        <div class="servico-bloco-destaque-topo">
+                            <span class="badge-destaque">
+                                <i class="fa-solid fa-gem" aria-hidden="true"></i> Alto Padrão
+                            </span>
+                        </div>
+
+                        <div class="servico-bloco-cabecalho">
+                            <span class="servico-icone-emoji" aria-hidden="true">🔍</span>
+                            <div>
+                                <h3>Lavagem Detalhada — Lavagem Técnica de Alto Padrão</h3>
+                                <p>
+                                    Nosso serviço mais minucioso. Indicado para veículos que precisam de uma limpeza profunda, com atenção especial às frestas, cantos, rodas, plásticos e áreas que normalmente não recebem o mesmo cuidado em uma lavagem convencional.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detalhamento-etapas-grid">
+                            <div class="detalhamento-item">
+                                <div class="detalhamento-item-icone">
+                                    <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5>Rodas e Caixas de Roda</h5>
+                                    <p>Limpeza profunda das caixas de roda e componentes externos, utilizando escovas e pincéis específicos para remover barro, resíduos e sujeira acumulada. As rodas também recebem limpeza técnica para auxiliar na remoção de crostas e resíduos de pó de freio.</p>
+                                </div>
+                            </div>
+
+                            <div class="detalhamento-item">
+                                <div class="detalhamento-item-icone">
+                                    <i class="fa-solid fa-paintbrush" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5>Detalhamento Externo com Pincéis</h5>
+                                    <p>Limpeza detalhada de emblemas, grades, frestas de portas, retrovisores, frisos, pestanas dos vidros e demais áreas de difícil acesso, utilizando pincéis de cerdas macias e produtos específicos.</p>
+                                </div>
+                            </div>
+
+                            <div class="detalhamento-item">
+                                <div class="detalhamento-item-icone">
+                                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5>Renovação e Proteção de Plásticos</h5>
+                                    <p>Aplicação de produtos específicos para limpeza, condicionamento e proteção dos plásticos externos e caixas de roda, valorizando a aparência e o acabamento do veículo.</p>
+                                </div>
+                            </div>
+
+                            <div class="detalhamento-item">
+                                <div class="detalhamento-item-icone">
+                                    <i class="fa-solid fa-spray-can-sparkles" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5>Detalhamento Interno</h5>
+                                    <p>Limpeza minuciosa da cabine, com atenção especial às áreas de maior acúmulo de sujeira, como saídas de ar-condicionado, comandos, porta-copos, soleiras, cantos e frestas.</p>
+                                </div>
+                            </div>
+
+                            <div class="detalhamento-item detalhamento-item-full">
+                                <div class="detalhamento-item-icone">
+                                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5>Acabamento Premium</h5>
+                                    <p>Finalização com produtos específicos para cada superfície, proporcionando toque seco, aparência uniforme e proteção prolongada, entregando um acabamento sofisticado em todo o veículo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- O RESULTADO -->
+                        <div class="resultado-destaque-box">
+                            <div class="resultado-destaque-icone" aria-hidden="true">✨</div>
+                            <div class="resultado-destaque-texto">
+                                <h4>O resultado</h4>
+                                <p>
+                                    Mais do que simplesmente lavar, o objetivo da Lavagem Detalhada é recuperar a sensação de cuidado e conservação em cada parte do veículo, inclusive nos pequenos detalhes que normalmente passam despercebidos.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- TABELA DE PREÇOS -->
+                <div class="tabela-precos-secao">
+                    <div class="secao-cabecalho tabela-cabecalho revelar">
+                        <span class="secao-etiqueta">Valores Transparentes</span>
+                        <h3>Tabela de Preços</h3>
+                        <p>Consulte o investimento correspondente ao modelo e porte do seu veículo.</p>
+                    </div>
+
+                    <div class="tabela-precos-wrapper revelar">
+                        <table class="tabela-precos">
+                            <caption class="sr-only">Preços dos serviços por categoria de veículo</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tipo de Serviço</th>
+                                    <th scope="col">Hatch / Compacto</th>
+                                    <th scope="col">Sedan / Wagon</th>
+                                    <th scope="col">SUV</th>
+                                    <th scope="col">Caminhonete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Somente Limpeza Externa</th>
+                                    <td data-label="Hatch / Compacto">R$ 45</td>
+                                    <td data-label="Sedan / Wagon">R$ 55</td>
+                                    <td data-label="SUV">R$ 65</td>
+                                    <td data-label="Caminhonete">R$ 80</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Somente Limpeza Interna</th>
+                                    <td data-label="Hatch / Compacto">R$ 45</td>
+                                    <td data-label="Sedan / Wagon">R$ 55</td>
+                                    <td data-label="SUV">R$ 65</td>
+                                    <td data-label="Caminhonete">R$ 80</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lavagem Completa (Sem Cera)</th>
+                                    <td data-label="Hatch / Compacto">R$ 80</td>
+                                    <td data-label="Sedan / Wagon">R$ 95</td>
+                                    <td data-label="SUV">R$ 115</td>
+                                    <td data-label="Caminhonete">R$ 140</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lavagem Completa (Com Cera)</th>
+                                    <td data-label="Hatch / Compacto">R$ 100</td>
+                                    <td data-label="Sedan / Wagon">R$ 120</td>
+                                    <td data-label="SUV">R$ 145</td>
+                                    <td data-label="Caminhonete">R$ 175</td>
+                                </tr>
+                                <tr class="linha-destaque">
+                                    <th scope="row">
+                                        Lavagem Detalhada (Técnica)
+                                        <span class="tabela-badge">Especial</span>
+                                    </th>
+                                    <td data-label="Hatch / Compacto">R$ 160</td>
+                                    <td data-label="Sedan / Wagon">R$ 190</td>
+                                    <td data-label="SUV">R$ 230</td>
+                                    <td data-label="Caminhonete">R$ 280</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lavagem de Motor (Adicional)</th>
+                                    <td data-label="Hatch / Compacto">R$ 50</td>
+                                    <td data-label="Sedan / Wagon">R$ 50</td>
+                                    <td data-label="SUV">R$ 65</td>
+                                    <td data-label="Caminhonete">R$ 80</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div class="servicos-acao revelar">
@@ -247,15 +457,79 @@
             <div class="container">
                 <div class="secao-cabecalho">
                     <span class="secao-etiqueta">Resultados</span>
-                    <h2>Galeria</h2>
-                    <p>Alguns registros do nosso trabalho.</p>
+                    <h2>Galeria de Clientes</h2>
+                    <p>Veja de perto o padrão de brilho, cuidado e acabamento entregue em cada veículo.</p>
                 </div>
 
                 <div class="galeria-grid">
-                    <img class="revelar" src="assets/img/1.jpg" alt="Lavagem automotiva" loading="lazy">
-                    <img class="revelar" src="assets/img/2.jpg" alt="Detalhamento automotivo" loading="lazy">
-                    <img class="revelar" src="assets/img/3.jpg" alt="Limpeza de veículo" loading="lazy">
-                    <img class="revelar" src="assets/img/4.jpg" alt="Resultado de estética automotiva" loading="lazy">
+                    <figure class="galeria-item revelar" data-img-src="assets/img/1.jpg" data-caption="Jeep Compass — Cuidado Completo & Brilho Espelhado">
+                        <img src="assets/img/1.jpg" alt="Jeep Compass branco com lavagem e acabamento profissional" loading="lazy">
+                        <div class="galeria-overlay">
+                            <span class="galeria-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> SUV</span>
+                            <div class="galeria-info">
+                                <h4>Jeep Compass</h4>
+                                <p>Cuidado completo interno e externo</p>
+                            </div>
+                            <span class="galeria-zoom-icone" aria-hidden="true">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                    </figure>
+
+                    <figure class="galeria-item revelar" data-img-src="assets/img/2.jpg" data-caption="BMW Série 3 — Detalhamento Técnico & Proteção de Pintura">
+                        <img src="assets/img/2.jpg" alt="BMW Série 3 com acabamento de alto padrão e reflexos profundos" loading="lazy">
+                        <div class="galeria-overlay">
+                            <span class="galeria-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Sedan Premium</span>
+                            <div class="galeria-info">
+                                <h4>BMW Série 3</h4>
+                                <p>Detalhamento técnico e brilho profundo</p>
+                            </div>
+                            <span class="galeria-zoom-icone" aria-hidden="true">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                    </figure>
+
+                    <figure class="galeria-item revelar" data-img-src="assets/img/3.jpg" data-caption="Chevrolet Camaro — Acabamento Impecável & Realce de Brilho">
+                        <img src="assets/img/3.jpg" alt="Chevrolet Camaro branco com brilho intenso e lataria protegida" loading="lazy">
+                        <div class="galeria-overlay">
+                            <span class="galeria-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> Esportivo</span>
+                            <div class="galeria-info">
+                                <h4>Chevrolet Camaro</h4>
+                                <p>Acabamento impecável e realce de curvas</p>
+                            </div>
+                            <span class="galeria-zoom-icone" aria-hidden="true">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                    </figure>
+
+                    <figure class="galeria-item revelar" data-img-src="assets/img/4.jpg" data-caption="Fiat Fastback — Lavagem Detalhada & Proteção">
+                        <img src="assets/img/4.jpg" alt="Fiat Fastback cinza chumbo com acabamento refinado" loading="lazy">
+                        <div class="galeria-overlay">
+                            <span class="galeria-badge"><i class="fa-solid fa-sparkles" aria-hidden="true"></i> SUV Coupé</span>
+                            <div class="galeria-info">
+                                <h4>Fiat Fastback</h4>
+                                <p>Lavagem detalhada e renovação de plásticos</p>
+                            </div>
+                            <span class="galeria-zoom-icone" aria-hidden="true">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            </span>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="galeria-rodape revelar">
+                    <p>Quer acompanhar mais transformações do dia a dia?</p>
+                    <a
+                        class="botao botao-secundario"
+                        href="https://instagram.com/scar.detail"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        Siga no Instagram
+                    </a>
                 </div>
             </div>
         </section>
@@ -381,6 +655,17 @@
     >
         <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
+
+    <!-- MODAL LIGHTBOX PARA A GALERIA -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Visualização da imagem da galeria">
+        <button class="lightbox-fechar" id="lightboxFechar" type="button" aria-label="Fechar visualização">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <div class="lightbox-conteudo">
+            <img id="lightboxImagem" src="" alt="">
+            <p id="lightboxLegenda"></p>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
